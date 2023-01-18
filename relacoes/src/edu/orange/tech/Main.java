@@ -14,5 +14,11 @@ public class Main {
         Carro car1 = new Carro("Kombi", "ADV-4043", 1993);
 
         Moto m1 = new Moto("Ninja", "DRG-9755", 2015);
+
+        //Upcast
+        Veiculo m2 = new Moto("twister", "FRT-9405", 2005);
+
+        //Downcast - é um conceito válido em POO, mas deve ser evitado
+        Carro v2 = (Carro) new Veiculo("Marea", "RNU-0568", 2001);
     }
 }
